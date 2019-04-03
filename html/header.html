@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        *{
+            box-sizing: inherit;
+        }
+        body{
+            direction: ltr;
+            min-height: 100%;
+            height: auto;
+            background-color: #002055;
+            background-image: radial-gradient(ellipse 50% 70% at 50% 0,#002c74 20%,#001536);
+            background-attachment: fixed;
+            margin: 0;
+            line-height: 1.5;
+            color: rgba(255,255,255,.9);
+        }
+        body,h1,h2{
+            font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+            font-weight: 400;
+        }
+        header{
+            display: block;
+        }
+        .headers{
+            z-index: 200;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0,0,0,.7);
+            padding: 0;
+            display: block;
+        }
+        a,a:active,a:hover,a:focus{
+            color: inherit;
+        }
+        a{
+            background-color: transparent;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        div{
+            margin: 0;
+            padding: 0;
+        }
+        .make-believe-header{
+            background-color: #000;
+            position: relative;
+            height: 30px;
+        }
+        .make-believe-header-container{
+            position: relative;
+        }
+        .make-believe-header-icon{
+            background: url(../img/logo/SONY4.png) no-repeat ;
+            background-position-y: 6px;
+            background-size: contain;
+            height: 30px;
+            width: 71px;
+            margin-top: 3px;
+            position: absolute;
+            right: 0;
+            margin-bottom: 1px;
+            outline: 0;
+        }
+        .main-nav{
+            border-top: 1px solid rgba(255,255,255,.08);
+            border-bottom: 2px solid rgba(255,255,255,.08);
+        }
+        .main-nav-right{
+            /*width: 400px;*/
+            margin-top: 15px;
+            margin-bottom: 15px;
+            align-self: center;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+        }
+        .menu{
+            margin: 0;
+            list-style: none;
+        }
+        .menu>li>a{
+            display: block;
+            line-height: 1;
+        }
+        .store-logo{
+            background: url(../img/logo/playstation.png) center no-repeat;
+            background-size: contain;
+            height: 91px;
+            width: 200px;
+            margin-right: 20px;
+            outline: 0;
+        }
+        .user-control{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-right: 10px;
+        }
+        .right-nav-buttons{
+            float: right;
+            margin-bottom: 2px;
+        }
+        .right-nav-buttons>a{
+            display: inline-block;
+            font-size: 14px;
+            vertical-align: middle;
+            color: rgba(255,255,255,.7);
+        }
+        .right-nav-buttons>div{
+            display: inline-block;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+        .sub-nav{
+            width: 900px;
+        }
+        .sub-list{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+        }
+        .sub-item{
+            display: inline-block;
+            /*margin-right: ;*/
+        }
+        .sub-item-text{
+            font-size: 1rem;
+            line-height: 2.6875rem;
+            color: rgba(255,255,255,.6);
+            font-weight: 700;
+            padding: 0px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="headers">
+        <div class="make-believe-header">
+            <div class="container make-believe-header-container">
+                <a href="" class="make-believe-header-icon"></a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <div>
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html" class="store-logo" target="_top"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-nav-right">
+                    <div class="user-control">
+                        <div class="right-nav-buttons signed-out-controls">
+                            <a href="#">登入</a>
+                            <div>|</div>
+                            <a href="#">创建账号</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="container">
+                <div class="sub-nav">
+                    <ul class="sub-list">
+                        <li class="sub-item">
+                            <div>
+                                <a href="#">
+                                    <span class="sub-item-text">尊享推荐</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sub-item">
+                            <div>
+                                <a href="#">
+                                    <span class="sub-item-text">PS4&trade;</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sub-item">
+                            <div>
+                                <a href="#">
+                                    <span class="sub-item-text">PS Vita</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
